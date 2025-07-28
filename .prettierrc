@@ -10,7 +10,7 @@
   "trailingComma": "es5",
   "plugins": [],
   "importOrderGroupNamespaceSpecifiers": true,
-  "importOrderParserPlugins": ["typescript", "jsx"],
+  "importOrderParserPlugins": ["typescript", "jsx", "tsx"],
   "importOrderSortSpecifiers": true,
   "importOrderSeparation": true
 }

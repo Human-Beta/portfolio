@@ -12,12 +12,14 @@ This is a personal portfolio website built with **React** and **Tailwind CSS**. 
 ## 📦 Setup
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/portfolio-site.git
    cd portfolio-site
    ```
 
 2. Install dependencies:
+
    ```bash
    npm install
    ```

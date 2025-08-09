@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@theme {
+  --z-index-base: 0;
+  --z-index-nav: 10;
+  --z-index-dropdown: 20;
+  --z-index-overlay: 30;
+  --z-index-toast: 40;
+}

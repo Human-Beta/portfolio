@@ -8,7 +8,7 @@ const iconClass = 'h-4 w-4 md:h-5 md:w-5' as const;
 function Header() {
   return (
     <>
-      <nav className='sticky top-0 z-50 p-4 bg-gray-800 text-white flex justify-between items-center'>
+      <nav className='sticky top-0 z-nav p-4 bg-gray-800 text-white flex justify-between items-center'>
         <Link to='/' className='text-2xl font-bold'>
           Sm.
         </Link>

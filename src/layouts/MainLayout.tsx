@@ -5,9 +5,9 @@ import Header from '@/components/Header';
 
 function MainLayout() {
   return (
-    <div className='flex min-h-screen flex-col'>
+    <div className='container mx-auto px-4 md:px-8 lg:px-16 flex min-h-screen flex-col'>
       <Header />
-      <main className='flex-1 px-4 py-8 md:px-8 lg:px-16'>
+      <main className='flex-1 py-8'>
         <Outlet />
       </main>
       <Footer />

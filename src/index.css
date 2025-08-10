@@ -23,7 +23,7 @@
   @apply flex items-center gap-2 text-galactic-gray transition-all duration-300;
 
   &:hover {
-    --y-offset: 0.25rem;
+    --y-offset: --spacing(1);
 
     @apply text-nebula-pink -translate-y-(--y-offset) scale-105;
     filter: drop-shadow(0 var(--y-offset) 6px);

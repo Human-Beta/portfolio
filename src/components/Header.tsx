@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import { GITHUB_URL } from '@/config';
+
 import { GitHubIcon, HomeIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/components/icons/Icons';
 
 const linkClass = 'flex items-center gap-2 text-galactic-gray hover:text-nebula-pink' as const;
@@ -29,8 +31,7 @@ function Header() {
             <ProjectsIcon className={iconClass} title='Projects' />
             Projects
           </Link>
-          {/*TODOM: put the link to the config*/}
-          <Link to='https://github.com/Human-Beta' className='text-galactic-gray' target='_blank'>
+          <Link to={GITHUB_URL} className='text-galactic-gray' target='_blank'>
             <GitHubIcon className={iconClass} title='GitHub' />
           </Link>
         </div>

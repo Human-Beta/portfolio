@@ -6,4 +6,15 @@
   --z-index-dropdown: 20;
   --z-index-overlay: 30;
   --z-index-toast: 40;
+
+  /* Deep blue for backgrounds or large sections. */
+  --color-deep-space: #020429;
+  /* Bright gold for buttons, links, and highlights. */
+  --color-stellar-gold: #FFD700;
+  /* Soft pink for hover effects and accents. */
+  --color-nebula-pink: #FF4F81;
+  /* Neutral gray for text or secondary blocks. */
+  --color-galactic-gray: #A9A9A9;
+   /* Main paragraph text. */
+  --color-lunar-gray: #D1D5DB;
 }

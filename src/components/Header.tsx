@@ -9,7 +9,7 @@ function Header() {
   return (
     <>
       <nav className='sticky top-0 z-nav p-4 flex justify-between items-center'>
-        <Link to='/' className='text-2xl text-stellar-gold font-bold'>
+        <Link to='/' className='text-4xl text-stellar-gold font-bold'>
           Sm.
         </Link>
         <div className='flex items-center gap-12 text-lg'>

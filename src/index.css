@@ -18,3 +18,14 @@
    /* Main paragraph text. */
   --color-lunar-gray: #D1D5DB;
 }
+
+.nav-link {
+  @apply flex items-center gap-2 text-galactic-gray transition-all duration-300;
+}
+
+.nav-link:hover {
+  --y-offset: 0.25rem;
+
+  @apply text-nebula-pink -translate-y-(--y-offset) scale-105;
+  filter: drop-shadow(0 var(--y-offset) 6px);
+}

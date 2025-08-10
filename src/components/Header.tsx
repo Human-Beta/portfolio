@@ -4,7 +4,6 @@ import { GITHUB_URL } from '@/config';
 
 import { GitHubIcon, HomeIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/components/icons/Icons';
 
-const linkClass = 'flex items-center gap-2 text-galactic-gray hover:text-nebula-pink' as const;
 const iconClass = 'h-4 w-4 md:h-5 md:w-5' as const;
 
 function Header() {
@@ -15,19 +14,19 @@ function Header() {
           Sm.
         </Link>
         <div className='flex items-center gap-12 text-lg'>
-          <Link to='/' className={linkClass}>
+          <Link to='/' className='nav-link'>
             <HomeIcon className={iconClass} title='Home' />
             Home
           </Link>
-          <Link to='/about' className={linkClass}>
+          <Link to='/about' className='nav-link'>
             <UserIcon className={iconClass} title='About' />
             About
           </Link>
-          <Link to='/resume' className={linkClass}>
+          <Link to='/resume' className='nav-link'>
             <ResumeIcon className={iconClass} title='Resume' />
             Resume
           </Link>
-          <Link to='/projects' className={linkClass}>
+          <Link to='/projects' className='nav-link'>
             <ProjectsIcon className={iconClass} title='Projects' />
             Projects
           </Link>

@@ -1,30 +1,24 @@
+import { Link } from 'react-router-dom';
+
+import { GITHUB_URL, LINKEDIN_URL } from '@/config';
+
+import { GitHubIcon, LinkedInIcon } from '@/components/icons/Icons';
+
+const iconClass = 'h-4 w-4 md:h-5 md:w-5' as const;
+
 function Footer() {
   return (
-    <footer className='bg-gray-900 text-white py-6'>
-      <div className='container mx-auto px-4 flex flex-col md:flex-row items-center justify-between'>
-        <p className='text-sm text-center md:text-left'>
-          © {new Date().getFullYear()} Your Name. All rights reserved.
-        </p>
-        <div className='flex space-x-4 mt-4 md:mt-0'>
-          <a
-            href='https://github.com/your-username'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='hover:text-gray-400 transition'
-          >
-            GitHub
-          </a>
-          <a
-            href='https://linkedin.com/in/your-username'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='hover:text-gray-400 transition'
-          >
-            LinkedIn
-          </a>
-          <a href='mailto:your@email.com' className='hover:text-gray-400 transition'>
-            Email
-          </a>
+    <footer className='text-galactic-gray py-6'>
+      <div className='flex flex-col md:flex-row items-center justify-between space-y-1 md:space-y-0'>
+        <p className='text-sm'>Developed by Mykyta Shyshov</p>
+        <p className='text-sm'>Copyright © {new Date().getFullYear()} MS</p>
+        <div className='flex items-center space-x-4'>
+          <Link to={GITHUB_URL} className='text-galactic-gray' target='_blank'>
+            <GitHubIcon className={iconClass} title='GitHub' />
+          </Link>
+          <Link to={LINKEDIN_URL} className='text-galactic-gray' target='_blank'>
+            <LinkedInIcon className={iconClass} title='LinkedIn' />
+          </Link>
         </div>
       </div>
     </footer>

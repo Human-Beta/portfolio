@@ -30,7 +30,11 @@ function Header() {
             <ProjectsIcon className={iconClass} title='Projects' />
             Projects
           </Link>
-          <Link to={GITHUB_URL} className='text-galactic-gray' target='_blank'>
+          <Link
+            to={GITHUB_URL}
+            className='text-galactic-gray hover:text-nebula-pink hover:scale-115 duration-300'
+            target='_blank'
+          >
             <GitHubIcon className={iconClass} title='GitHub' />
           </Link>
         </div>

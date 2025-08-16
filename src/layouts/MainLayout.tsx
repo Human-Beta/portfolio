@@ -10,7 +10,7 @@ function MainLayout() {
       <BackgroundStars />
       <div className='container mx-auto px-4 md:px-8 lg:px-30 flex min-h-screen flex-col'>
         <Header />
-        <main className='flex-1 py-8'>
+        <main className='flex flex-1 py-8'>
           <Outlet />
         </main>
         <Footer />

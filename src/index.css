@@ -17,6 +17,8 @@
   --color-galactic-gray: #a9a9a9;
   /* Main paragraph text. */
   --color-lunar-gray: #d1d5db;
+
+  --font-family-heading: 'Orbitron', sans-serif;
 }
 
 .nav-link {
@@ -28,4 +30,8 @@
     @apply text-nebula-pink -translate-y-(--y-offset) scale-105;
     filter: drop-shadow(0 var(--y-offset) 6px);
   }
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
 }

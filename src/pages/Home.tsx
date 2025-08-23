@@ -1,5 +1,7 @@
 import { Typewriter } from 'react-simple-typewriter';
 
+import pugImage from '@/assets/pug_wo_back.webp';
+
 const Home = () => {
   return (
     <div className='flex flex-1 items-center justify-between px-25'>
@@ -25,13 +27,7 @@ const Home = () => {
           />
         </h1>
       </div>
-      <img
-        src='https://cdn.shopify.com/s/files/1/0565/8021/0861/files/steptodown_3.png?v=1707392483'
-        alt='pug'
-        width='300'
-        height='300'
-        className='z-base'
-      />
+      <img src={pugImage} alt='Character illustration' className='z-base w-[400px]' loading='lazy' decoding='async' />
     </div>
   );
 };

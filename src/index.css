@@ -24,12 +24,17 @@
 .nav-link {
   @apply flex items-center gap-2 text-galactic-gray transition-all duration-300;
 
-  &:hover {
+  &:hover:not(.nav-link-active) {
     --y-offset: --spacing(1);
 
     @apply text-nebula-pink -translate-y-(--y-offset) scale-105;
     filter: drop-shadow(0 var(--y-offset) 6px);
   }
+}
+
+.nav-link-active {
+  @apply text-stellar-gold;
+  filter: drop-shadow(0 0 4px --alpha(var(--color-stellar-gold) / 70%));
 }
 
 body {

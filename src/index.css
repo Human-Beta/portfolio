@@ -23,6 +23,10 @@
   --font-family-heading: 'Orbitron', sans-serif;
 }
 
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 .nav-link {
   @apply flex items-center gap-2 text-galactic-gray transition-all duration-300;
 
@@ -35,10 +39,6 @@
 
 .nav-link-active {
   @apply text-stellar-gold drop-shadow-[0_0_4px]/70;
-}
-
-body {
-  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* 👋 Custom wave animation */

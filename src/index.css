@@ -17,6 +17,8 @@
   --color-galactic-gray: #a9a9a9;
   /* Main paragraph text. */
   --color-lunar-gray: #d1d5db;
+  /* Soft blue for links - reminiscent of distant galaxies */
+  --color-astral-blue: #4a9eff;
 
   --font-family-heading: 'Orbitron', sans-serif;
 }

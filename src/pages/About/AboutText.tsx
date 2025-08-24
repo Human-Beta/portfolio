@@ -3,9 +3,7 @@ import { Link } from 'react-router-dom';
 const AboutText = () => {
   const highlight = (text: string) => <span className='text-stellar-gold'>{text}</span>;
 
-  const techHighlight = (text: string) => (
-    <span className='text-nebula-pink bg-nebula-pink/20 font-medium px-1 rounded'>{text}</span>
-  );
+  const techHighlight = (text: string) => <span className='underline font-medium px-1 rounded'>{text}</span>;
 
   return (
     <div className='flex flex-col items-center gap-5 p-4 text-lunar-gray'>

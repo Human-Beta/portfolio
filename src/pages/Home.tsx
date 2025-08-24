@@ -17,7 +17,7 @@ const Home = () => {
             I'm <strong className='text-stellar-gold'>Mykyta Shyshov</strong>
           </h1>
         </div>
-        <h1 className='text-4xl text-stellar-gold'>
+        <h1 className='text-4xl text-nebula-pink'>
           <Typewriter
             words={['Software Developer', 'Fullstack', 'Freelancer']}
             loop

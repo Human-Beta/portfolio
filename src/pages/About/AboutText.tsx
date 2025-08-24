@@ -18,7 +18,7 @@ const AboutText = () => {
         <Link
           to='https://aspira.global/'
           target='_blank'
-          className='text-astral-blue hover:text-stellar-gold transition-colors'
+          className='text-astral-blue hover:drop-shadow-[0_0_4px]/80 transition-colors'
         >
           Aspira Ltd.
         </Link>{' '}

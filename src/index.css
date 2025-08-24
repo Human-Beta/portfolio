@@ -29,14 +29,12 @@
   &:hover:not(.nav-link-active) {
     --y-offset: --spacing(1);
 
-    @apply text-nebula-pink -translate-y-(--y-offset) scale-105;
-    filter: drop-shadow(0 var(--y-offset) 6px);
+    @apply text-nebula-pink -translate-y-(--y-offset) scale-105 drop-shadow-[0_var(--y-offset)_6px];
   }
 }
 
 .nav-link-active {
-  @apply text-stellar-gold;
-  filter: drop-shadow(0 0 4px --alpha(var(--color-stellar-gold) / 70%));
+  @apply text-stellar-gold drop-shadow-[0_0_4px]/70;
 }
 
 body {

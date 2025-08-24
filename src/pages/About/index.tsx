@@ -4,9 +4,9 @@ import AboutText from '@/pages/About/AboutText';
 
 const About = () => {
   return (
-    <div className='flex flex-1 items-center justify-between'>
+    <div className='flex flex-1 items-center justify-between px-25'>
       <AboutText />
-      <img src={pugImage2} alt='Character illustration' className='z-base w-[450px]' loading='lazy' decoding='async' />
+      <img src={pugImage2} alt='Character illustration' className='z-base w-[400px]' loading='lazy' decoding='async' />
     </div>
   );
 };

@@ -28,7 +28,7 @@ body {
 }
 
 .nav-link {
-  @apply flex items-center gap-2 text-galactic-gray transition-all duration-300;
+  @apply flex items-center gap-2 text-lunar-gray transition-all duration-300;
 
   &:hover:not(.nav-link-active) {
     --y-offset: --spacing(1);

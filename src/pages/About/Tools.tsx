@@ -14,8 +14,8 @@ const Tools = () => {
         <span className='text-stellar-gold'>Tools</span> I use
       </p>
       <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
-        {tools.map(Icon => (
-          <div className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
+        {tools.map((Icon, index) => (
+          <div key={index} className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
             <Icon />
           </div>
         ))}

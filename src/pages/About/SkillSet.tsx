@@ -41,8 +41,8 @@ const SkillSet = () => {
         Professional <span className='text-stellar-gold'>Skill Set</span>
       </p>
       <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
-        {skillSet.map(Icon => (
-          <div className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
+        {skillSet.map((Icon, index) => (
+          <div key={index} className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
             <Icon />
           </div>
         ))}

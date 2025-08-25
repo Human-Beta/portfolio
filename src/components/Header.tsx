@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 import { GITHUB_URL } from '@/config';
+import useWindowEvent from '@/hooks/useWindowEvent';
 
 import { GitHubIcon, HomeIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/components/icons/Icons';
 
@@ -16,18 +17,10 @@ const getNavLinkClass = ({ isActive }: { isActive: boolean }) => `nav-link ${isA
 function Header({ className }: Props) {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 0);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+  useWindowEvent('scroll', () => {
+    const scrollTop = window.scrollY;
+    setIsScrolled(scrollTop > 0);
+  });
 
   return (
     <header

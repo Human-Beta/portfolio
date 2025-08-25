@@ -8,10 +8,10 @@ const containerClass = 'container mx-auto px-4 md:px-8 lg:px-30';
 
 function MainLayout() {
   return (
-    <div className='bg-deep-space'>
+    <div className='bg-deep-space flex flex-col min-h-screen'>
       <BackgroundStars />
       <Header className={containerClass} />
-      <div className={`${containerClass} flex min-h-screen flex-col`}>
+      <div className={`${containerClass} flex-1 flex flex-col`}>
         <main className='flex flex-1 py-8'>
           <Outlet />
         </main>

@@ -10,13 +10,18 @@ function Footer() {
   return (
     <footer className='text-galactic-gray py-6'>
       <div className='flex flex-col md:flex-row items-center justify-between space-y-1 md:space-y-0'>
-        <p className='text-sm'>Developed by Mykyta Shyshov</p>
+        <p className='text-sm'>
+          Developed by Mykyta Shyshov. Icons by{' '}
+          <Link to='https://icons8.com' target='_blank' className='underline'>
+            Icons8
+          </Link>
+        </p>
         <p className='text-sm'>Copyright © {new Date().getFullYear()} MS</p>
         <div className='flex items-center space-x-4'>
-          <Link to={GITHUB_URL} className='text-galactic-gray' target='_blank'>
+          <Link to={GITHUB_URL} target='_blank'>
             <GitHubIcon className={iconClass} title='GitHub' />
           </Link>
-          <Link to={LINKEDIN_URL} className='text-galactic-gray' target='_blank'>
+          <Link to={LINKEDIN_URL} target='_blank'>
             <LinkedInIcon className={iconClass} title='LinkedIn' />
           </Link>
         </div>

@@ -6,6 +6,8 @@ import { GitHubIcon, LinkedInIcon } from '@/components/icons/Icons';
 
 const iconClass = 'h-4 w-4 md:h-5 md:w-5' as const;
 
+const year = new Date().getFullYear();
+
 function Footer() {
   return (
     <footer className='text-galactic-gray py-6'>
@@ -16,7 +18,7 @@ function Footer() {
             Icons8
           </Link>
         </p>
-        <p className='text-sm'>Copyright © {new Date().getFullYear()} MS</p>
+        <p className='text-sm'>Copyright © {year} MS</p>
         <div className='flex items-center space-x-4'>
           <Link to={GITHUB_URL} target='_blank'>
             <GitHubIcon className={iconClass} title='GitHub' />

@@ -43,7 +43,7 @@ const SkillSet = () => {
       <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
         {skillSet.map((Icon, index) => (
           <div key={index} className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
-            <Icon />
+            <Icon width={100} height={100} />
           </div>
         ))}
       </div>

@@ -1,10 +1,15 @@
-const VueIcon = () => {
+interface Props {
+  width?: number;
+  height?: number;
+}
+
+const VueIcon = ({ width = 100, height = 100 }: Props) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 50 50'
-      width='100'
-      height='100'
+      width={width}
+      height={height}
       fill='currentColor'
       aria-labelledby='vuejs icon'
     >

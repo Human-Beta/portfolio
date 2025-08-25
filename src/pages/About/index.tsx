@@ -2,6 +2,7 @@ import pugImage2 from '@/assets/pug_wo_back_2.webp';
 
 import AboutText from '@/pages/About/AboutText';
 import SkillSet from '@/pages/About/SkillSet';
+import Tools from '@/pages/About/Tools';
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
         />
       </div>
       <SkillSet />
+      <Tools />
     </div>
   );
 };

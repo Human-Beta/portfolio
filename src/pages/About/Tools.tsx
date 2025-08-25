@@ -1,0 +1,27 @@
+import ChatGPTIcon from '@/assets/tools/ChatGPTIcon';
+import IntelliJIDEAIcon from '@/assets/tools/IntelliJIDEAIcon';
+import MacOSIcon from '@/assets/tools/MacOSIcon';
+import PostmanIcon from '@/assets/tools/PostmanIcon';
+import SlackIcon from '@/assets/tools/SlackIcon';
+import VSCodeIcon from '@/assets/tools/VSCodeIcon';
+
+const tools = [IntelliJIDEAIcon, VSCodeIcon, MacOSIcon, ChatGPTIcon, PostmanIcon, SlackIcon];
+
+const Tools = () => {
+  return (
+    <div className='flex flex-col gap-5'>
+      <p className='text-3xl text-lunar-gray font-bold text-center'>
+        <span className='text-stellar-gold'>Tools</span> I use
+      </p>
+      <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
+        {tools.map(Icon => (
+          <div className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
+            <Icon />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Tools;

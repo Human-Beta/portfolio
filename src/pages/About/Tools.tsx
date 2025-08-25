@@ -1,11 +1,12 @@
 import ChatGPTIcon from '@/assets/tools/ChatGPTIcon';
 import IntelliJIDEAIcon from '@/assets/tools/IntelliJIDEAIcon';
+import JunieIcon from '@/assets/tools/JunieIcon';
 import MacOSIcon from '@/assets/tools/MacOSIcon';
 import PostmanIcon from '@/assets/tools/PostmanIcon';
 import SlackIcon from '@/assets/tools/SlackIcon';
 import VSCodeIcon from '@/assets/tools/VSCodeIcon';
 
-const tools = [IntelliJIDEAIcon, VSCodeIcon, MacOSIcon, ChatGPTIcon, PostmanIcon, SlackIcon];
+const tools = [IntelliJIDEAIcon, VSCodeIcon, MacOSIcon, ChatGPTIcon, JunieIcon, PostmanIcon, SlackIcon];
 
 const Tools = () => {
   return (

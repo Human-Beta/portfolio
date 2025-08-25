@@ -1,8 +1,8 @@
 const MacOSIcon = () => {
   return (
     <svg
-      width='100px'
-      height='100px'
+      width='100'
+      height='100'
       viewBox='0 8.84000015258789 160.7899932861328 37.029998779296875'
       data-asc='0.9052734375'
     >

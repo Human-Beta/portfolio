@@ -1,8 +1,8 @@
 import pugImage2 from '@/assets/pug_wo_back_2.webp';
 
-import AboutText from '@/pages/About/AboutText';
-import SkillSet from '@/pages/About/SkillSet';
-import Tools from '@/pages/About/Tools';
+import AboutText from '@/components/about/AboutText';
+import SkillSet from '@/components/about/SkillSet';
+import Tools from '@/components/about/Tools';
 
 const About = () => {
   return (

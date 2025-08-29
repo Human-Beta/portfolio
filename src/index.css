@@ -72,3 +72,32 @@ body {
 @utility animate-wave {
   animation: wave 2.2s infinite;
 }
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-deep-space);
+}
+
+::-webkit-scrollbar-thumb {
+  --scrollbar-thumb-color: var(--color-stellar-gold);
+
+  background-color: --alpha(var(--scrollbar-thumb-color) / 80%);
+  border-radius: 3px;
+  transition: background-color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: --alpha(var(--scrollbar-thumb-color) / 90%);
+}
+
+/* Firefox-only scrollbar styles */
+@-moz-document url-prefix() {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: --alpha(var(--color-stellar-gold) / 80%) var(--color-deep-space);
+  }
+}

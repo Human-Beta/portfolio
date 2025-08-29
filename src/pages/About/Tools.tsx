@@ -6,7 +6,17 @@ import PostmanIcon from '@/assets/tools/PostmanIcon';
 import SlackIcon from '@/assets/tools/SlackIcon';
 import VSCodeIcon from '@/assets/tools/VSCodeIcon';
 
-const tools = [IntelliJIDEAIcon, VSCodeIcon, MacOSIcon, ChatGPTIcon, JunieIcon, PostmanIcon, SlackIcon];
+import IconLink from '@/components/IconLink';
+
+const tools = [
+  [IntelliJIDEAIcon, 'https://www.jetbrains.com/idea/'],
+  [VSCodeIcon, 'https://code.visualstudio.com/'],
+  [MacOSIcon, 'https://www.apple.com/macos/'],
+  [ChatGPTIcon, 'https://chat.openai.com/'],
+  [JunieIcon, 'https://www.jetbrains.com/junie/'],
+  [PostmanIcon, 'https://www.postman.com/'],
+  [SlackIcon, 'https://slack.com/'],
+] as const;
 
 const Tools = () => {
   return (
@@ -15,10 +25,10 @@ const Tools = () => {
         <span className='text-stellar-gold'>Tools</span> I use
       </p>
       <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
-        {tools.map((Icon, index) => (
-          <div key={index} className='border rounded-lg border-stellar-gold/80 px-15 py-5'>
+        {tools.map(([Icon, link], index) => (
+          <IconLink key={index} to={link}>
             <Icon width={100} height={100} />
-          </div>
+          </IconLink>
         ))}
       </div>
     </div>

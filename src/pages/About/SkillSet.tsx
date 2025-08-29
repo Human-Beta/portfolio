@@ -4,6 +4,7 @@ import DockerIcon from '@/assets/skill-set/DockerIcon';
 import GCPIcon from '@/assets/skill-set/GCPIcon';
 import GitIcon from '@/assets/skill-set/GitIcon';
 import Html5Icon from '@/assets/skill-set/Html5Icon';
+import HybrisIcon from '@/assets/skill-set/HybrisIcon';
 import JavaIcon from '@/assets/skill-set/JavaIcon';
 import JavaScriptIcon from '@/assets/skill-set/JavaScriptIcon';
 import JenkinsIcon from '@/assets/skill-set/JenkinsIcon';
@@ -24,6 +25,7 @@ const skillSet = [
   AwsIcon,
   GCPIcon,
   DockerIcon,
+  HybrisIcon,
   GitIcon,
   JenkinsIcon,
   TypeScriptIcon,

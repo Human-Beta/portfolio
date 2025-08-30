@@ -15,8 +15,10 @@
     "@tsparticles/engine": "^3.9.1",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.9.1",
+    "@types/react-pdf": "^6.2.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-pdf": "^10.1.0",
     "react-router-dom": "^7.7.1",
     "react-simple-typewriter": "^5.0.1"
   },

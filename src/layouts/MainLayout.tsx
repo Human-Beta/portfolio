@@ -15,8 +15,8 @@ function MainLayout() {
         <main className='flex flex-1 py-8'>
           <Outlet />
         </main>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

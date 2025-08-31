@@ -7,14 +7,12 @@ const NotFound = () => {
         <div className='flex flex-col gap-4'>
           <h1 className='text-6xl font-bold text-stellar-gold'>404</h1>
           <h2 className='text-4xl'>Oops! Page Not Found</h2>
-          <p className='text-xl'>
-            The page you're looking for doesn't exist or has been moved.
-          </p>
+          <p className='text-xl'>The page you're looking for doesn't exist or has been moved.</p>
         </div>
         <div className='flex flex-col gap-4'>
           <Link
             to='/'
-            className='rounded-lg bg-stellar-gold px-6 py-3 text-lg font-semibold text-black transition-colors hover:bg-yellow-400'
+            className='rounded-lg bg-stellar-gold px-6 py-3 text-lg font-semibold text-black transition-colors-d-300 hover:bg-yellow-400'
           >
             Go Back Home
           </Link>

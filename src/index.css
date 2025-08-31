@@ -28,7 +28,7 @@ body {
 }
 
 .nav-link {
-  @apply flex items-center gap-2 text-lunar-gray transition-all duration-300;
+  @apply flex items-center gap-2 text-lunar-gray transition-all-d-300;
 
   &:hover:not(.nav-link-active) {
     --y-offset: --spacing(1);
@@ -39,6 +39,27 @@ body {
 
 .nav-link-active {
   @apply text-stellar-gold drop-shadow-[0_0_4px]/70;
+}
+
+/* Custom utility classes */
+@utility transition-all-d-* {
+  @apply transition-all duration-[--value(integer)ms];
+}
+
+@utility transition-opacity-d-* {
+  @apply transition-opacity duration-[--value(integer)ms];
+}
+
+@utility transition-transform-d-* {
+  @apply transition-transform duration-[--value(integer)ms];
+}
+
+@utility transition-colors-d-* {
+  @apply transition-colors duration-[--value(integer)ms];
+}
+
+@utility transition-shadow-d-* {
+  @apply transition-shadow duration-[--value(integer)ms];
 }
 
 /* 👋 Custom wave animation */

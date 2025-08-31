@@ -39,7 +39,7 @@ function Header({ className }: Props) {
 
   return (
     <header
-      className={`sticky top-0 z-nav p-4 font-family-heading transition-all duration-300 ease-in-out ${isScrolled ? headerBlurredClass : ''}`}
+      className={`sticky top-0 z-nav p-4 font-family-heading transition-all-d-300 ease-in-out ${isScrolled ? headerBlurredClass : ''}`}
     >
       <div className={`${className} flex justify-between items-center`}>
         <Link to='/' className='text-4xl text-stellar-gold font-bold'>
@@ -74,23 +74,23 @@ function Header({ className }: Props) {
 
         <button
           onClick={openMobileMenu}
-          className='md:hidden cursor-pointer text-stellar-gold hover:text-nebula-pink transition-colors duration-300 p-2'
+          className='md:hidden cursor-pointer text-stellar-gold hover:text-nebula-pink transition-colors-d-300 p-2'
           aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
         >
           {isMobileMenuOpen || <MenuIcon className={iconClass} title='Open menu' />}
         </button>
 
         <div
-          className={`md:hidden fixed inset-0 z-overlay transition-opacity duration-100 ease-in-out ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+          className={`md:hidden fixed inset-0 z-overlay transition-opacity-d-100 ease-in-out ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         >
           <div className='absolute inset-0 bg-black/50 backdrop-blur-sm' onClick={closeMobileMenu} />
           <div
-            className={`absolute top-0 right-0 h-full w-80 max-w-[90vw] ${headerBlurredClass} p-6 transform transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+            className={`absolute top-0 right-0 h-full w-80 max-w-[90vw] ${headerBlurredClass} p-6 transform transition-transform-d-200 ease-in-out ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
           >
             <div className='flex justify-end mb-3'>
               <button
                 onClick={closeMobileMenu}
-                className='cursor-pointer text-stellar-gold hover:text-nebula-pink transition-colors duration-300 p-2'
+                className='cursor-pointer text-stellar-gold hover:text-nebula-pink transition-colors-d-300 p-2'
                 aria-label='Close menu'
               >
                 <CloseIcon className={iconClass} title='Close menu' />

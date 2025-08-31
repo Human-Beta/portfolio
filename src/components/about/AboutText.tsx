@@ -17,11 +17,7 @@ const AboutText = () => {
         <br />
         <br />
         I’m currently employed as a Fullstack Developer at{' '}
-        <Link
-          to='https://aspira.global/'
-          target='_blank'
-          className='text-astral-blue hover:drop-shadow-[0_0_4px]/80 transition-colors'
-        >
+        <Link to='https://aspira.global/' target='_blank' className='text-astral-blue hover:drop-shadow-[0_0_4px]/80'>
           Aspira Ltd.
         </Link>{' '}
         with a strong background in {techHighlight('Java', 'https://www.java.com/')},{' '}

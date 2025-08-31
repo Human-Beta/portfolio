@@ -7,8 +7,7 @@ interface IconLinkProps {
   className?: string;
 }
 
-const baseClasses =
-  'border rounded-lg border-stellar-gold/80 px-15 py-5 hover:scale-105 transition-transform duration-300';
+const baseClasses = 'border rounded-lg border-stellar-gold/80 px-15 py-5 hover:scale-105 transition-transform-d-300';
 
 const IconLink = ({ to, children, className = '' }: IconLinkProps) => {
   const combinedClasses = className ? `${baseClasses} ${className}` : baseClasses;

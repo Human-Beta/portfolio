@@ -58,5 +58,5 @@ export default function BackgroundStars() {
     return null;
   }
 
-  return <Particles id='tsparticles-stars-bg' options={options} style={{ pointerEvents: 'none' }} />;
+  return <Particles id='tsparticles-stars-bg' options={options} className='pointer-events-none' />;
 }

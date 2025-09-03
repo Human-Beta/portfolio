@@ -12,7 +12,11 @@ function Footer() {
     <footer className='text-galactic-gray py-6'>
       <div className='flex flex-col md:flex-row items-center space-y-1 md:space-y-0 px-30'>
         <p className='flex-1 text-sm'>
-          Developed by me. Icons by{' '}
+          Developed by me. Inspired by{' '}
+          <ExternalLink to='https://github.com/soumyajit4419/Portfolio' className='underline'>
+            S0umyajit
+          </ExternalLink>
+          . Icons by{' '}
           <ExternalLink to='https://icons8.com' className='underline'>
             Icons8
           </ExternalLink>

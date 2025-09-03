@@ -41,6 +41,10 @@ body {
   @apply text-stellar-gold drop-shadow-[0_0_4px]/70;
 }
 
+.flex-full-center {
+  @apply flex items-center justify-center;
+}
+
 /* Custom utility classes */
 @utility transition-all-d-* {
   @apply transition-all duration-[--value(integer)ms];

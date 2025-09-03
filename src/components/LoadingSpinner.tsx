@@ -1,6 +1,6 @@
 const LoadingSpinner = () => {
   return (
-    <div className='fixed inset-0 bg-deep-space flex items-center justify-center'>
+    <div className='fixed inset-0 bg-deep-space flex-full-center'>
       <div className='flex flex-col items-center gap-6'>
         {/* Animated spinning ring */}
         <div className='relative w-16 h-16'>

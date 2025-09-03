@@ -27,7 +27,7 @@ const Resume = () => {
 
   if (hasError) {
     return (
-      <div className='flex-1 flex items-center justify-center'>
+      <div className='flex-1 flex-full-center'>
         <div className='max-w-md bg-galactic-gray/20 rounded-lg p-6 text-center text-lunar-gray'>
           <svg
             className='w-16 h-16 mx-auto mb-4 text-stellar-gold'

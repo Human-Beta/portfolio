@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { GITHUB_URL } from '@/config';
 import useWindowEvent from '@/hooks/useWindowEvent';
 
+import ExternalLink from '@/components/ExternalLink';
 import {
   CloseIcon,
   GitHubIcon,
@@ -63,13 +64,12 @@ function Header({ className }: Props) {
             <ProjectsIcon className={iconClass} title='Projects' />
             Projects
           </NavLink>
-          <Link
+          <ExternalLink
             to={GITHUB_URL}
             className='text-galactic-gray hover:text-nebula-pink hover:scale-115 duration-300'
-            target='_blank'
           >
             <GitHubIcon className={iconClass} title='GitHub' />
-          </Link>
+          </ExternalLink>
         </div>
 
         <button
@@ -114,15 +114,14 @@ function Header({ className }: Props) {
                 <ProjectsIcon className={iconClass} title='Projects' />
                 Projects
               </NavLink>
-              <Link
+              <ExternalLink
                 to={GITHUB_URL}
                 className='flex items-center gap-3 text-galactic-gray hover:text-nebula-pink hover:scale-105 duration-300'
-                target='_blank'
                 onClick={closeMobileMenu}
               >
                 <GitHubIcon className={iconClass} title='GitHub' />
                 GitHub
-              </Link>
+              </ExternalLink>
             </nav>
           </div>
         </div>

@@ -1,12 +1,12 @@
-import { Link } from 'react-router-dom';
+import ExternalLink from '@/components/ExternalLink';
 
 const AboutText = () => {
   const highlight = (text: string) => <span className='text-stellar-gold'>{text}</span>;
 
   const techHighlight = (text: string, link: string) => (
-    <Link to={link} target='_blank' className='underline font-medium'>
+    <ExternalLink to={link} className='underline font-medium'>
       {text}
-    </Link>
+    </ExternalLink>
   );
 
   return (
@@ -17,9 +17,9 @@ const AboutText = () => {
         <br />
         <br />
         I’m currently employed as a Fullstack Developer at{' '}
-        <Link to='https://aspira.global/' target='_blank' className='text-astral-blue hover:drop-shadow-[0_0_4px]/80'>
+        <ExternalLink to='https://aspira.global/' className='text-astral-blue hover:drop-shadow-[0_0_4px]/80'>
           Aspira Ltd.
-        </Link>{' '}
+        </ExternalLink>{' '}
         with a strong background in {techHighlight('Java', 'https://www.java.com/')},{' '}
         {techHighlight('Spring', 'https://spring.io/')}, {techHighlight('MySQL', 'https://www.mysql.com/')},{' '}
         {techHighlight('TypeScript', 'https://www.typescriptlang.org/')}, {techHighlight('Vue', 'https://vuejs.org/')},

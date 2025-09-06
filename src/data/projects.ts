@@ -22,7 +22,7 @@ function id() {
 export const projects: readonly Project[] = [
   {
     id: id(),
-    image: '/projects/messenger.png',
+    image: '/projects/messenger.webp',
     imageAlt: 'Messenger App Screenshot',
     title: 'Messenger',
     description: `A real-time messenger inspired by Telegram with authentication, user search, and one-to-one chats powered by WebSockets. 
@@ -36,7 +36,7 @@ export const projects: readonly Project[] = [
   },
   {
     id: id(),
-    image: '/projects/portfolio.png',
+    image: '/projects/portfolio.webp',
     imageAlt: 'Portfolio App Screenshot',
     title: 'Portfolio',
     description: `A responsive portfolio website built with React, TypeScript, and Tailwind CSS. It showcases my CV, skills, and pet projects. 

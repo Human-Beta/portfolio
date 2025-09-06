@@ -10,7 +10,7 @@ const HybrisIcon = ({ width = 100, height = 100 }: Props) => {
       width={width}
       height={height}
       viewBox='5 5 182 182'
-      aria-labelledby='hybris icon'
+      aria-labelledby='hybris'
     >
       <g fill-rule='evenodd' clip-rule='evenodd'>
         <path

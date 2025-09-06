@@ -9,7 +9,7 @@ const MacOSIcon = ({ width = 100, height = 100 }: Props) => {
       height={height}
       viewBox='0 8.84000015258789 160.7899932861328 37.029998779296875'
       data-asc='0.9052734375'
-      aria-labelledby='macos icon'
+      aria-labelledby='macos'
     >
       <path
         fill='currentColor'

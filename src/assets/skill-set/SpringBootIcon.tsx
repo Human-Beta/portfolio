@@ -11,7 +11,7 @@ const SpringBootIcon = ({ width = 100, height = 100 }: Props) => {
       width={width}
       height={height}
       stroke='currentColor'
-      aria-labelledby='spring boot icon'
+      aria-labelledby='spring boot'
     >
       <path
         fill='transparent'

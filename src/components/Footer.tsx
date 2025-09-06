@@ -1,7 +1,7 @@
 import { EMAIL, GITHUB_URL, LINKEDIN_URL } from '@/config';
 
 import ExternalLink from '@/components/ExternalLink';
-import { GitHubIcon, LinkedInIcon } from '@/components/icons/Icons';
+import { GitHubIcon, GmailIcon, LinkedInIcon } from '@/components/icons/Icons';
 
 const iconClass = 'h-4 w-4 md:h-5 md:w-5' as const;
 
@@ -22,12 +22,15 @@ function Footer() {
           </ExternalLink>
         </p>
         <p className='flex-1 text-center text-sm'>Copyright © {year} MS</p>
-        <div className='flex-1 flex items-center justify-end space-x-4'>
+        <div className='flex-1 flex items-center justify-end gap-3'>
           <ExternalLink to={GITHUB_URL}>
             <GitHubIcon className={iconClass} />
           </ExternalLink>
           <ExternalLink to={LINKEDIN_URL}>
             <LinkedInIcon className={iconClass} />
+          </ExternalLink>
+          <ExternalLink to={EMAIL}>
+            <GmailIcon className={iconClass} />
           </ExternalLink>
         </div>
       </div>

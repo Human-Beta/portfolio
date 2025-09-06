@@ -1,3 +1,5 @@
+import { GITHUB_URL } from '@/config';
+
 interface Link {
   url: string;
   label?: string;
@@ -28,8 +30,8 @@ export const projects: readonly Project[] = [
       Designed with a clean client–server split for scalability and easy maintenance. Repos are split into UI and Server for clarity.
     `,
     links: [
-      { label: 'UI', url: 'https://github.com/Human-Beta/messenger-ui' },
-      { label: 'Server', url: 'https://github.com/Human-Beta/messenger-server-spring' },
+      { label: 'UI', url: `${GITHUB_URL}/messenger-ui` },
+      { label: 'Server', url: `${GITHUB_URL}/messenger-server-spring` },
     ],
   },
   {
@@ -40,6 +42,6 @@ export const projects: readonly Project[] = [
     description: `A responsive portfolio website built with React, TypeScript, and Tailwind CSS. It showcases my CV, skills, and pet projects. 
       The project is modular, easy to extend, and deployed on Vercel for fast and reliable hosting
     `,
-    links: [{ url: 'https://github.com/Human-Beta/portfolio' }],
+    links: [{ url: `${GITHUB_URL}/portfolio` }],
   },
 ];

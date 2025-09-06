@@ -13,18 +13,12 @@ const Projects = () => {
       </div>
 
       <div className='flex flex-wrap justify-center gap-8 z-base'>
-        {projects.map(({ id, image, imageAlt, title, description, githubUrl }) => (
+        {projects.map(project => (
           <div
-            key={id}
+            key={project.id}
             className='w-full sm:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] min-w-[300px] max-w-[400px]'
           >
-            <ProjectCard
-              image={image}
-              imageAlt={imageAlt}
-              title={title}
-              description={description}
-              githubUrl={githubUrl}
-            />
+            <ProjectCard project={project} />
           </div>
         ))}
       </div>

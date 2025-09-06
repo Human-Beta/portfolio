@@ -1,4 +1,4 @@
-import { GITHUB_URL, LINKEDIN_URL } from '@/config';
+import { EMAIL, GITHUB_URL, LINKEDIN_URL } from '@/config';
 
 import ExternalLink from '@/components/ExternalLink';
 import { GitHubIcon, LinkedInIcon } from '@/components/icons/Icons';
@@ -24,10 +24,10 @@ function Footer() {
         <p className='flex-1 text-center text-sm'>Copyright © {year} MS</p>
         <div className='flex-1 flex items-center justify-end space-x-4'>
           <ExternalLink to={GITHUB_URL}>
-            <GitHubIcon className={iconClass} title='GitHub' />
+            <GitHubIcon className={iconClass} />
           </ExternalLink>
           <ExternalLink to={LINKEDIN_URL}>
-            <LinkedInIcon className={iconClass} title='LinkedIn' />
+            <LinkedInIcon className={iconClass} />
           </ExternalLink>
         </div>
       </div>

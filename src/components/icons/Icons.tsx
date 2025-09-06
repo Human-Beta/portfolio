@@ -3,7 +3,7 @@ export type IconProps = {
   title?: string;
 };
 
-export function HomeIcon({ className, title }: IconProps) {
+export function HomeIcon({ className, title = 'Home' }: IconProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -24,7 +24,7 @@ export function HomeIcon({ className, title }: IconProps) {
   );
 }
 
-export function UserIcon({ className, title }: IconProps) {
+export function UserIcon({ className, title = 'User' }: IconProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -44,7 +44,7 @@ export function UserIcon({ className, title }: IconProps) {
   );
 }
 
-export function ResumeIcon({ className, title }: IconProps) {
+export function ResumeIcon({ className, title = 'Resume' }: IconProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -67,7 +67,7 @@ export function ResumeIcon({ className, title }: IconProps) {
   );
 }
 
-export function ProjectsIcon({ className, title }: IconProps) {
+export function ProjectsIcon({ className, title = 'Projects' }: IconProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -88,7 +88,7 @@ export function ProjectsIcon({ className, title }: IconProps) {
   );
 }
 
-export function GitHubIcon({ className, title }: IconProps) {
+export function GitHubIcon({ className, title = 'GitHub' }: IconProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -103,7 +103,7 @@ export function GitHubIcon({ className, title }: IconProps) {
   );
 }
 
-export function LinkedInIcon({ className, title }: IconProps) {
+export function LinkedInIcon({ className, title = 'LinkedIn' }: IconProps) {
   const offset = 3;
   const minX = offset;
   const minY = offset;
@@ -123,7 +123,7 @@ export function LinkedInIcon({ className, title }: IconProps) {
   );
 }
 
-export function DownloadIcon({ className, title }: IconProps) {
+export function DownloadIcon({ className, title = 'Download' }: IconProps) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

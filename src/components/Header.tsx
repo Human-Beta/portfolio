@@ -49,7 +49,7 @@ function Header({ className }: Props) {
 
         <div className='hidden md:flex items-center gap-12 text-lg'>
           <NavLink to='/' className={getNavLinkAdaptiveClass}>
-            <HomeIcon className={iconClass} title='Home' />
+            <HomeIcon className={iconClass} />
             Home
           </NavLink>
           <NavLink to='/about' className={getNavLinkAdaptiveClass}>
@@ -57,18 +57,18 @@ function Header({ className }: Props) {
             About
           </NavLink>
           <NavLink to='/resume' className={getNavLinkAdaptiveClass}>
-            <ResumeIcon className={iconClass} title='Resume' />
+            <ResumeIcon className={iconClass} />
             Resume
           </NavLink>
           <NavLink to='/projects' className={getNavLinkAdaptiveClass}>
-            <ProjectsIcon className={iconClass} title='Projects' />
+            <ProjectsIcon className={iconClass} />
             Projects
           </NavLink>
           <ExternalLink
             to={GITHUB_URL}
             className='text-galactic-gray hover:text-nebula-pink hover:scale-115 duration-300'
           >
-            <GitHubIcon className={iconClass} title='GitHub' />
+            <GitHubIcon className={iconClass} />
           </ExternalLink>
         </div>
 
@@ -99,7 +99,7 @@ function Header({ className }: Props) {
 
             <nav className='flex flex-col space-y-6 text-lg'>
               <NavLink to='/' className={getNavLinkClass} onClick={closeMobileMenu}>
-                <HomeIcon className={iconClass} title='Home' />
+                <HomeIcon className={iconClass} />
                 Home
               </NavLink>
               <NavLink to='/about' className={getNavLinkClass} onClick={closeMobileMenu}>
@@ -107,11 +107,11 @@ function Header({ className }: Props) {
                 About
               </NavLink>
               <NavLink to='/resume' className={getNavLinkClass} onClick={closeMobileMenu}>
-                <ResumeIcon className={iconClass} title='Resume' />
+                <ResumeIcon className={iconClass} />
                 Resume
               </NavLink>
               <NavLink to='/projects' className={getNavLinkClass} onClick={closeMobileMenu}>
-                <ProjectsIcon className={iconClass} title='Projects' />
+                <ProjectsIcon className={iconClass} />
                 Projects
               </NavLink>
               <ExternalLink

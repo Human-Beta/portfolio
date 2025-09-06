@@ -44,7 +44,7 @@ function Header({ className }: Props) {
     >
       <div className={`${className} flex justify-between items-center`}>
         <Link to='/' className='text-4xl text-stellar-gold font-bold'>
-          Ms. DOS
+          Ms.
         </Link>
 
         <div className='hidden md:flex items-center gap-12 text-lg'>

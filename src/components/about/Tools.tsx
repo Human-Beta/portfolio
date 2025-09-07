@@ -5,6 +5,7 @@ import MacOSIcon from '@/assets/tools/MacOSIcon';
 import PostmanIcon from '@/assets/tools/PostmanIcon';
 import SlackIcon from '@/assets/tools/SlackIcon';
 import VSCodeIcon from '@/assets/tools/VSCodeIcon';
+import VercelIcon from '@/assets/tools/VercelIcon';
 
 import IconLink from '@/components/IconLink';
 
@@ -16,6 +17,7 @@ const tools = [
   [JunieIcon, 'https://www.jetbrains.com/junie/'],
   [PostmanIcon, 'https://www.postman.com/'],
   [SlackIcon, 'https://slack.com/'],
+  [VercelIcon, 'https://vercel.com/'],
 ] as const;
 
 const Tools = () => {

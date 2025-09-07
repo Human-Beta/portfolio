@@ -119,7 +119,7 @@ function Header({ className }: Props) {
                 className='flex items-center gap-3 text-galactic-gray hover:text-nebula-pink hover:scale-105 duration-300'
                 onClick={closeMobileMenu}
               >
-                <GitHubIcon className={iconClass} title='GitHub' />
+                <GitHubIcon className={iconClass} />
                 GitHub
               </ExternalLink>
             </nav>

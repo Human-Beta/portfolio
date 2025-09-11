@@ -80,6 +80,7 @@ function Header({ className }: Props) {
           {isMobileMenuOpen || <MenuIcon className={iconClass} title='Open menu' />}
         </button>
 
+        {/* Mobile menu overlay and panel that appears on small screens (below md breakpoint) */}
         <div
           className={`md:hidden fixed inset-0 z-overlay transition-opacity-d-100 ease-in-out ${isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
         >

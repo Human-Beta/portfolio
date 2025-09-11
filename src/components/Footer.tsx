@@ -10,8 +10,8 @@ const year = new Date().getFullYear();
 function Footer() {
   return (
     <footer className='text-galactic-gray py-6'>
-      <div className='flex flex-col md:flex-row items-center space-y-1 md:space-y-0 px-30'>
-        <p className='flex-1 text-sm'>
+      <div className='flex flex-col md:flex-row items-center gap-3 md:gap-0 px-30'>
+        <p className='flex-1 text-sm text-center'>
           Developed by me. Inspired by{' '}
           <ExternalLink to='https://github.com/soumyajit4419/Portfolio' className='underline'>
             S0umyajit

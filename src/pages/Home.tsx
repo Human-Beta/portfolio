@@ -4,7 +4,7 @@ import pugImage from '@/assets/pug_wo_back.webp';
 
 const Home = () => {
   return (
-    <div className='flex-col md:flex-row flex flex-1 items-center justify-between md:px-12 lg:px-15 xl:px-25'>
+    <div className='flex-col md:flex-row flex flex-1 items-center justify-around sm:justify-between md:px-12 lg:px-15 xl:px-25'>
       <div className='flex flex-col items-center gap-5 text-lunar-gray md:items-start md:p-4 md:gap-13'>
         <div className='flex flex-row justify-center flex-wrap gap-4 md:flex-col'>
           <h1 className='text-3xl'>
@@ -18,7 +18,6 @@ const Home = () => {
           </h1>
         </div>
         <h1 className='text-3xl text-center sm:text-4xl md:text-left'>
-          {/*Software Developer*/}
           <Typewriter
             words={['Software Developer', 'Full Stack', 'Freelancer']}
             loop

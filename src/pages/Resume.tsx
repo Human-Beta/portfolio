@@ -50,7 +50,7 @@ const Resume = () => {
 
   return (
     <div className='flex-1 flex flex-col items-center gap-5'>
-      <DownloadButton itemName='CSV' />
+      <DownloadButton itemName='CV' />
 
       <Document
         file='/resume.pdf'
@@ -69,7 +69,7 @@ const Resume = () => {
         ))}
       </Document>
 
-      <DownloadButton itemName='CSV' />
+      <DownloadButton itemName='CV' />
     </div>
   );
 };

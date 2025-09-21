@@ -4,7 +4,7 @@ import ProjectCard from '@/components/ProjectCard';
 
 const Projects = () => {
   return (
-    <div className='flex-1 flex flex-col gap-10 xl:gap-15'>
+    <div className='flex-1 flex flex-col gap-10'>
       <div className='text-center text-lunar-gray'>
         <h1 className='text-4xl font-bold mb-4'>
           My Recent <span className='text-stellar-gold'>Works</span>

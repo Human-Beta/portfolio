@@ -4,7 +4,7 @@ import pugImage from '@/assets/pug_wo_back.webp';
 
 const Home = () => {
   return (
-    <div className='flex-col md:flex-row flex flex-1 items-center justify-around sm:justify-between md:px-12 lg:px-15 xl:px-25'>
+    <div className='flex-1 flex flex-col items-center justify-around sm:justify-between md:flex-row md:px-12 lg:px-15 xl:px-25'>
       <div className='flex flex-col items-center gap-5 text-lunar-gray md:items-start md:p-4 md:gap-13'>
         <div className='flex flex-row justify-center flex-wrap gap-4 md:flex-col'>
           <h1 className='text-3xl'>
@@ -30,7 +30,7 @@ const Home = () => {
       <img
         src={pugImage}
         alt='Character illustration'
-        className='z-base w-[60%] md:w-[40%] lg:max-w-100 xl:w-1/2'
+        className='z-base w-[60%] max-w-100 md:w-[40%] xl:w-1/2'
         loading='lazy'
         decoding='async'
       />

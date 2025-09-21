@@ -1,4 +1,4 @@
-import pugImage2 from '@/assets/pug_wo_back_2.webp';
+import PubWoBack2 from '@/assets/PubWoBack2.tsx';
 
 import AboutText from '@/components/about/AboutText';
 import SkillSet from '@/components/about/SkillSet';
@@ -6,16 +6,10 @@ import Tools from '@/components/about/Tools';
 
 const About = () => {
   return (
-    <div className='flex flex-col gap-20'>
-      <div className='flex items-center justify-between gap-20'>
+    <div className='flex flex-col gap-10 xl:gap-20'>
+      <div className='flex flex-col items-center justify-between gap-10 md:flex-row md:items-start md:gap-5 xl:gap-10 2xl:gap-20'>
         <AboutText />
-        <img
-          src={pugImage2}
-          alt='Character illustration'
-          className='z-base w-[400px]'
-          loading='lazy'
-          decoding='async'
-        />
+        <PubWoBack2 className='z-base max-w-100 md:shrink-[1.2] lg:shrink-[1.1]' />
       </div>
       <SkillSet />
       <Tools />

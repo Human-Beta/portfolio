@@ -10,10 +10,10 @@ const AboutText = () => {
   );
 
   return (
-    <div className='flex flex-col items-center gap-5 p-4 text-lunar-gray'>
+    <div className='flex flex-col items-center gap-5 text-lunar-gray'>
       <h1 className='text-3xl font-bold'>Know Who {highlight("I'M")}</h1>
-      <p className='text-xl'>
-        Hi, everyone, I'm {highlight('Mykyta Shyshov')} from {highlight('Odesa, Ukraine')}!
+      <p className='text-xl text-justify'>
+        Hi, everyone, I'm {highlight('Mykyta Shyshov')} from {highlight('Lviv, Ukraine')}!
         <br />
         <br />
         I’m currently employed as a Fullstack Developer at{' '}

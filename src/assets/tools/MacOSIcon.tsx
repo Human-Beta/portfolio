@@ -1,12 +1,14 @@
 interface Props {
-  width?: number;
-  height?: number;
+  className?: string;
 }
-const MacOSIcon = ({ width = 100, height = 100 }: Props) => {
+
+const MacOSIcon = ({ className }: Props) => {
   return (
     <svg
-      width={width}
-      height={height}
+      xmlns='http://www.w3.org/2000/svg'
+      width='100'
+      height='100'
+      className={className}
       viewBox='0 8.84000015258789 160.7899932861328 37.029998779296875'
       data-asc='0.9052734375'
       aria-labelledby='macos'

@@ -7,7 +7,7 @@ import SlackIcon from '@/assets/tools/SlackIcon';
 import VSCodeIcon from '@/assets/tools/VSCodeIcon';
 import VercelIcon from '@/assets/tools/VercelIcon';
 
-import IconLink from '@/components/IconLink';
+import IconLink from '@/components/about/IconLink';
 
 const tools = [
   [IntelliJIDEAIcon, 'https://www.jetbrains.com/idea/'],
@@ -28,9 +28,7 @@ const Tools = () => {
       </p>
       <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
         {tools.map(([Icon, link], index) => (
-          <IconLink key={index} to={link}>
-            <Icon width={100} height={100} />
-          </IconLink>
+          <IconLink key={index} to={link} icon={Icon} />
         ))}
       </div>
     </div>

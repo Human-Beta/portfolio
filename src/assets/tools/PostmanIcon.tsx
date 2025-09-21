@@ -1,15 +1,16 @@
 interface Props {
-  width?: number;
-  height?: number;
+  className?: string;
 }
-const PostmanIcon = ({ width = 100, height = 100 }: Props) => {
+
+const PostmanIcon = ({ className }: Props) => {
   return (
     <svg
       fill='currentColor'
       viewBox='0 0 32 32'
       xmlns='http://www.w3.org/2000/svg'
-      width={width}
-      height={height}
+      width='100'
+      height='100'
+      className={className}
       aria-labelledby='postman'
     >
       <g id='SVGRepo_iconCarrier'>

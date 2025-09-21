@@ -16,7 +16,7 @@ import SpringBootIcon from '@/assets/skill-set/SpringBootIcon';
 import TypeScriptIcon from '@/assets/skill-set/TypeScriptIcon';
 import VueIcon from '@/assets/skill-set/VueIcon';
 
-import IconLink from '@/components/IconLink';
+import IconLink from '@/components/about/IconLink';
 
 const skillSet = [
   [JavaIcon, 'https://www.java.com/en/'],
@@ -44,11 +44,9 @@ const SkillSet = () => {
       <p className='text-3xl text-lunar-gray font-bold text-center'>
         Professional <span className='text-stellar-gold'>Skill Set</span>
       </p>
-      <div className='flex flex-wrap justify-center gap-10 text-lunar-gray'>
-        {skillSet.map(([Icon, link], index) => (
-          <IconLink key={index} to={link}>
-            <Icon width={100} height={100} />
-          </IconLink>
+      <div className='flex items-center flex-wrap justify-center gap-10 text-lunar-gray'>
+        {skillSet.map(([icon, link], index) => (
+          <IconLink key={index} to={link} icon={icon} />
         ))}
       </div>
     </div>

@@ -1,14 +1,15 @@
 interface Props {
-  width?: number;
-  height?: number;
+  className?: string;
 }
-const VSCodeIcon = ({ width = 100, height = 100 }: Props) => {
+
+const VSCodeIcon = ({ className }: Props) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 30 30'
-      width={width}
-      height={height}
+      width='100'
+      height='100'
+      className={className}
       fill='currentColor'
       aria-labelledby='vscode'
     >

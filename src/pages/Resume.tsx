@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
@@ -13,7 +13,11 @@ const Resume = () => {
   const [hasError, setHasError] = useState<boolean>(false);
 
   const pageNumbers = useMemo(() => {
-    return [...Array(numPages).keys()].map(pageIndex => pageIndex + 1);
+    if (!numPages || numPages <= 0) {
+      return [];
+    }
+
+    return Array.from({ length: numPages }, (_, i) => i + 1);
   }, [numPages]);
 
   const onDocumentLoadSuccess = useCallback(({ numPages }: { numPages: number }) => {
@@ -23,6 +27,33 @@ const Resume = () => {
 
   const onDocumentLoadError = useCallback(() => {
     setHasError(true);
+  }, []);
+
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [width, setWidth] = useState<number>(0);
+
+  useEffect(() => {
+    const element = containerRef.current;
+    if (!element) {
+      return;
+    }
+
+    setWidth(element.getBoundingClientRect().width);
+
+    const observer = new ResizeObserver(entries => {
+      const entry = entries[0];
+      if (!entry?.contentRect) {
+        return;
+      }
+
+      setWidth(entry.contentRect.width);
+    });
+
+    observer.observe(element);
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   if (hasError) {
@@ -49,7 +80,7 @@ const Resume = () => {
   }
 
   return (
-    <div className='flex-1 flex flex-col items-center gap-5'>
+    <div ref={containerRef} className='w-full flex flex-col items-center gap-5'>
       <DownloadButton itemName='CV' />
 
       <Document
@@ -64,7 +95,8 @@ const Resume = () => {
             pageNumber={pageNumber}
             renderTextLayer={true}
             renderAnnotationLayer={true}
-            scale={1.3}
+            width={width}
+            scale={0.9}
           />
         ))}
       </Document>

@@ -1,10 +1,10 @@
 import { Typewriter } from 'react-simple-typewriter';
 
-import pugImage from '@/assets/pug_wo_back.webp';
+import PubWoBack from '@/assets/PubWoBack.tsx';
 
 const Home = () => {
   return (
-    <div className='flex-1 flex flex-col items-center justify-around sm:justify-between md:flex-row md:px-12 lg:px-15 xl:px-25'>
+    <div className='flex-1 flex flex-col items-center justify-around gap-10 sm:justify-between md:gap-0 md:flex-row md:px-10 lg:px-15 xl:px-25'>
       <div className='flex flex-col items-center gap-5 text-lunar-gray md:items-start md:p-4 md:gap-13'>
         <div className='flex flex-row justify-center flex-wrap gap-4 md:flex-col'>
           <h1 className='text-3xl'>
@@ -27,13 +27,7 @@ const Home = () => {
           />
         </h1>
       </div>
-      <img
-        src={pugImage}
-        alt='Character illustration'
-        className='z-base w-[60%] max-w-100 md:w-[40%] xl:w-1/2'
-        loading='lazy'
-        decoding='async'
-      />
+      <PubWoBack className='z-base w-[60%] max-w-100 md:w-[35%] xl:w-1/2' />
     </div>
   );
 };

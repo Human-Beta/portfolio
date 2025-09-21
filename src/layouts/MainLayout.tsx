@@ -4,7 +4,7 @@ import BackgroundStars from '@/components/BackgroundStars';
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 
-const containerClass = 'container mx-auto px-4 md:px-8 lg:px-30';
+const containerClass = 'container mx-auto px-4 md:px-8 2xl:px-30';
 
 function MainLayout() {
   return (

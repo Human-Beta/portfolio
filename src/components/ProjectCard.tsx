@@ -11,12 +11,12 @@ const ProjectCard = ({ project }: Props) => {
   return (
     <div className='z-base flex flex-col gap-4 h-full p-6 bg-transparent rounded-lg transition-all-d-300 shadow-stellar-gold/40 shadow-[0_4px_12px] hover:scale-102 hover:shadow-stellar-gold/45 hover:shadow-[0_6px_15px]'>
       <div className='w-full overflow-hidden rounded-md'>
-        <img src={image} alt={imageAlt} className='w-full h-48 object-cover' />
+        <img src={image} alt={imageAlt} className='w-full' />
       </div>
 
       <div className='flex-1 flex flex-col gap-2'>
         <h3 className='text-xl font-bold font-family-heading text-center text-stellar-gold'>{title}</h3>
-        <p className='text-lunar-gray leading-relaxed flex-1'>{description}</p>
+        <p className='flex-1 text-lunar-gray leading-relaxed text-justify'>{description}</p>
       </div>
 
       <div className='flex flex-col gap-2'>

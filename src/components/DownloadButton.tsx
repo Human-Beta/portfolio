@@ -1,5 +1,6 @@
+import { DownloadIcon } from '@/assets/Icons.tsx';
+
 import ExternalLink from '@/components/ExternalLink';
-import { DownloadIcon } from '@/components/icons/Icons';
 
 interface Props {
   itemName: string;

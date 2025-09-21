@@ -1,7 +1,7 @@
+import { GitHubIcon, GmailIcon, LinkedInIcon } from '@/assets/Icons.tsx';
 import { EMAIL, GITHUB_URL, LINKEDIN_URL } from '@/config';
 
 import ExternalLink from '@/components/ExternalLink';
-import { GitHubIcon, GmailIcon, LinkedInIcon } from '@/components/icons/Icons';
 
 const iconClass = 'h-4 w-4 md:h-5 md:w-5' as const;
 

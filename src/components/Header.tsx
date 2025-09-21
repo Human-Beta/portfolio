@@ -1,19 +1,11 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
+import { CloseIcon, GitHubIcon, HomeIcon, MenuIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/assets/Icons.tsx';
 import { GITHUB_URL } from '@/config';
 import useWindowEvent from '@/hooks/useWindowEvent';
 
 import ExternalLink from '@/components/ExternalLink';
-import {
-  CloseIcon,
-  GitHubIcon,
-  HomeIcon,
-  MenuIcon,
-  ProjectsIcon,
-  ResumeIcon,
-  UserIcon,
-} from '@/components/icons/Icons';
 
 interface Props {
   className?: string;

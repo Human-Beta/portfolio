@@ -1,4 +1,4 @@
-import { DownloadIcon } from '@/assets/Icons.tsx';
+import { DownloadIcon } from '@/assets/Icons';
 
 import ExternalLink from '@/components/ExternalLink';
 

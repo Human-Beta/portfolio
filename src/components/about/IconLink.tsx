@@ -1,6 +1,6 @@
 import type { ComponentType } from 'react';
 
-import ExternalLink from '@/components/ExternalLink.tsx';
+import ExternalLink from '@/components/ExternalLink';
 
 interface IconLinkProps {
   to: string;

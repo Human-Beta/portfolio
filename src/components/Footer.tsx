@@ -1,4 +1,4 @@
-import { GitHubIcon, GmailIcon, LinkedInIcon } from '@/assets/Icons.tsx';
+import { GitHubIcon, GmailIcon, LinkedInIcon } from '@/assets/Icons';
 import { EMAIL, GITHUB_URL, LINKEDIN_URL } from '@/config';
 
 import ExternalLink from '@/components/ExternalLink';

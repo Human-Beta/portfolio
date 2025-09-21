@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
-import { CloseIcon, GitHubIcon, HomeIcon, MenuIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/assets/Icons.tsx';
+import { CloseIcon, GitHubIcon, HomeIcon, MenuIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/assets/Icons';
 import { GITHUB_URL } from '@/config';
 import useWindowEvent from '@/hooks/useWindowEvent';
 

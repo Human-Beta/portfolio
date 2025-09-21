@@ -1,6 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter';
 
-import PubWoBack from '@/assets/PubWoBack.tsx';
+import PubWoBack from '@/assets/PubWoBack';
 
 const Home = () => {
   return (

@@ -1,4 +1,4 @@
-import PubWoBack2 from '@/assets/PubWoBack2.tsx';
+import PubWoBack2 from '@/assets/PubWoBack2';
 
 import AboutText from '@/components/about/AboutText';
 import SkillSet from '@/components/about/SkillSet';

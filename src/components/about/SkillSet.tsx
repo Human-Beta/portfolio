@@ -1,20 +1,22 @@
-import AwsIcon from '@/assets/skill-set/AwsIcon';
-import Css3Icon from '@/assets/skill-set/Css3Icon';
-import DockerIcon from '@/assets/skill-set/DockerIcon';
-import GCPIcon from '@/assets/skill-set/GCPIcon';
-import GitIcon from '@/assets/skill-set/GitIcon';
-import Html5Icon from '@/assets/skill-set/Html5Icon';
-import HybrisIcon from '@/assets/skill-set/HybrisIcon';
-import JavaIcon from '@/assets/skill-set/JavaIcon';
-import JavaScriptIcon from '@/assets/skill-set/JavaScriptIcon';
-import JenkinsIcon from '@/assets/skill-set/JenkinsIcon';
-import MySqlIcon from '@/assets/skill-set/MySqlIcon';
-import PostgreSqlIcon from '@/assets/skill-set/PostgreSqlIcon';
-import ReactIcon from '@/assets/skill-set/ReactIcon';
-import RedisIcon from '@/assets/skill-set/RedisIcon';
-import SpringBootIcon from '@/assets/skill-set/SpringBootIcon';
-import TypeScriptIcon from '@/assets/skill-set/TypeScriptIcon';
-import VueIcon from '@/assets/skill-set/VueIcon';
+import {
+  AwsIcon,
+  Css3Icon,
+  DockerIcon,
+  GCPIcon,
+  GitIcon,
+  Html5Icon,
+  HybrisIcon,
+  JavaIcon,
+  JavaScriptIcon,
+  JenkinsIcon,
+  MySqlIcon,
+  PostgreSqlIcon,
+  ReactIcon,
+  RedisIcon,
+  SpringBootIcon,
+  TypeScriptIcon,
+  VueIcon,
+} from '@/assets/skill-set';
 
 import IconLink from '@/components/about/IconLink';
 

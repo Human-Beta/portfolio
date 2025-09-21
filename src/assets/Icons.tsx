@@ -1,7 +1,4 @@
-export type IconProps = {
-  className?: string;
-  title?: string;
-};
+import type IconProps from '@/assets/IconProps';
 
 export function HomeIcon({ className, title = 'Home' }: IconProps) {
   return (

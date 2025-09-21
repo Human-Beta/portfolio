@@ -1,0 +1,17 @@
+export { default as AwsIcon } from '@/assets/skill-set/AwsIcon';
+export { default as Css3Icon } from '@/assets/skill-set/Css3Icon';
+export { default as DockerIcon } from '@/assets/skill-set/DockerIcon';
+export { default as GCPIcon } from '@/assets/skill-set/GCPIcon';
+export { default as GitIcon } from '@/assets/skill-set/GitIcon';
+export { default as Html5Icon } from '@/assets/skill-set/Html5Icon';
+export { default as HybrisIcon } from '@/assets/skill-set/HybrisIcon';
+export { default as JavaIcon } from '@/assets/skill-set/JavaIcon';
+export { default as JavaScriptIcon } from '@/assets/skill-set/JavaScriptIcon';
+export { default as JenkinsIcon } from '@/assets/skill-set/JenkinsIcon';
+export { default as MySqlIcon } from '@/assets/skill-set/MySqlIcon';
+export { default as PostgreSqlIcon } from '@/assets/skill-set/PostgreSqlIcon';
+export { default as ReactIcon } from '@/assets/skill-set/ReactIcon';
+export { default as RedisIcon } from '@/assets/skill-set/RedisIcon';
+export { default as SpringBootIcon } from '@/assets/skill-set/SpringBootIcon';
+export { default as TypeScriptIcon } from '@/assets/skill-set/TypeScriptIcon';
+export { default as VueIcon } from '@/assets/skill-set/VueIcon';

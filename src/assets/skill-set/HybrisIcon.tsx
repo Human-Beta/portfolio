@@ -1,8 +1,6 @@
-interface Props {
-  className?: string;
-}
+import type IconProps from '@/assets/IconProps';
 
-const HybrisIcon = ({ className }: Props) => {
+const HybrisIcon = ({ className, title = 'Hybris' }: IconProps) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -10,8 +8,9 @@ const HybrisIcon = ({ className }: Props) => {
       height='100'
       className={className}
       viewBox='5 5 182 182'
-      aria-labelledby='hybris'
+      aria-hidden={title ? undefined : true}
     >
+      {title ? <title>{title}</title> : null}
       <g fillRule='evenodd' clipRule='evenodd'>
         <path
           fill='currentColor'

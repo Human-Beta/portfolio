@@ -1,8 +1,6 @@
-interface Props {
-  className?: string;
-}
+import type IconProps from '@/assets/IconProps';
 
-const SpringBootIcon = ({ className }: Props) => {
+const SpringBootIcon = ({ className, title = 'Spring Boot' }: IconProps) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -11,8 +9,9 @@ const SpringBootIcon = ({ className }: Props) => {
       height='100'
       className={className}
       stroke='currentColor'
-      aria-labelledby='spring boot'
+      aria-hidden={title ? undefined : true}
     >
+      {title ? <title>{title}</title> : null}
       <path
         fill='transparent'
         d='M43.982,23.635c0.069-4.261-0.891-9.328-2.891-15.273l-1.568-4.662l-2.13,4.433 c-0.114,0.237-0.244,0.469-0.38,0.698C33.514,5.827,28.974,4,24,4C12.954,4,4,12.954,4,24c0,11.046,8.954,20,20,20s20-8.954,20-20 C44,23.877,43.984,23.758,43.982,23.635z'

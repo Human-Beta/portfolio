@@ -1,8 +1,6 @@
-interface Props {
-  className?: string;
-}
+import type IconProps from '@/assets/IconProps';
 
-const VercelIcon = ({ className }: Props) => {
+const VercelIcon = ({ className, title = 'Vercel' }: IconProps) => {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'
@@ -11,8 +9,9 @@ const VercelIcon = ({ className }: Props) => {
       height='100'
       className={className}
       fill='currentColor'
-      aria-labelledby='vercel'
+      aria-hidden={title ? undefined : true}
     >
+      {title ? <title>{title}</title> : null}
       <path d='m37.5274 0 36.1574 63H1.3701z' />
     </svg>
   );

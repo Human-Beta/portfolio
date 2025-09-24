@@ -14,7 +14,7 @@ const GitHubActivity = () => {
       <h2 className='text-center text-2xl font-semibold md:text-3xl'>
         My <span className='text-stellar-gold'>Activity</span>
       </h2>
-      <div className='z-base w-full self-center'>
+      <div className='z-base flex justify-center'>
         <GitHubCalendar username={GITHUB_USERNAME} theme={calendarTheme} blockSize={12} blockMargin={5} fontSize={16} />
       </div>
     </div>

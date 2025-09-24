@@ -3,6 +3,7 @@ import PubWoBack2 from '@/assets/PubWoBack2';
 import AboutText from '@/components/about/AboutText';
 import SkillSet from '@/components/about/SkillSet';
 import Tools from '@/components/about/Tools';
+import GitHubActivity from '@/components/about/GitHubActivity';
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       </div>
       <SkillSet />
       <Tools />
+      <GitHubActivity />
     </div>
   );
 };

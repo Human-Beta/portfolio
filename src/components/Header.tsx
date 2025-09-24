@@ -11,7 +11,7 @@ interface Props {
   className?: string;
 }
 
-const headerBlurredClass = 'backdrop-blur-xl bg-[#26263085] shadow-lg shadow-black/20';
+const headerBlurredClass = 'bg-[#11101f] md:backdrop-blur-xl md:bg-[#26263085] md:shadow-lg md:shadow-black/20';
 const iconClass = 'h-4 w-4 md:h-5 md:w-5';
 const getNavLinkClass = ({ isActive }: { isActive: boolean }) => `nav-link ${isActive ? 'nav-link-active' : ''}`;
 const getNavLinkAdaptiveClass = ({ isActive }: { isActive: boolean }) =>

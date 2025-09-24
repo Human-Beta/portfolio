@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import { CloseIcon, GitHubIcon, HomeIcon, MenuIcon, ProjectsIcon, ResumeIcon, UserIcon } from '@/assets/Icons';
 import { GITHUB_URL } from '@/config';
+import useScrollLock from '@/hooks/useScrollLock';
 import useWindowEvent from '@/hooks/useWindowEvent';
 
 import ExternalLink from '@/components/ExternalLink';
@@ -25,6 +26,8 @@ function Header({ className }: Props) {
     const scrollTop = window.scrollY;
     setIsScrolled(scrollTop > 0);
   });
+
+  useScrollLock(isMobileMenuOpen);
 
   const openMobileMenu = () => setIsMobileMenuOpen(true);
 
